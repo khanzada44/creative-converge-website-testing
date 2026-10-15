@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creative Converge | White-Label Web Design Agency in Texas</title>
+  <meta name="description" content="Creative Converge is a premium white-label web design, branding and video animation studio in Texas. We design, you take the credit.">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta property="og:title" content="Creative Converge | White-Label Web Design Agency">
+  <meta property="og:description" content="Premium websites, branding and motion, built quietly under your agency's name.">
+  <meta property="og:image" content="assets/img/hero-3d.png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- ============ PRELOADER (animated logo intro) ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="logo-anim">
+      <svg class="logo-anim__mark" viewBox="-70 -70 140 140">
+        <defs>
+          <linearGradient id="plGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#5FF0C8"/><stop offset=".5" stop-color="#00D4A3"/><stop offset="1" stop-color="#008A72"/>
+          </linearGradient>
+        </defs>
+        <path class="la-ring" pathLength="1" d="M38.3 -32.1 A50 50 0 1 0 38.3 32.1" fill="none" stroke="url(#plGrad)" stroke-width="16" stroke-linecap="round"/>
+        <g><path class="la-ring2" pathLength="1" d="M23 -19.3 A30 30 0 1 0 23 19.3" fill="none" stroke="#5FF0C8" stroke-width="4" stroke-linecap="round"/><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="7s" begin="1.4s" repeatCount="indefinite"/></g>
+        <circle class="la-halo" cx="42" cy="0" r="9" fill="#5FF0C8"/>
+        <circle class="la-dot" cx="42" cy="0" r="9" fill="#5FF0C8"/>
+      </svg>
+      <div class="logo-anim__text">
+        <div class="la-w1"><span style="--i:0">C</span><span style="--i:1">r</span><span style="--i:2">e</span><span style="--i:3">a</span><span style="--i:4">t</span><span style="--i:5">i</span><span style="--i:6">v</span><span style="--i:7">e</span></div>
+        <div class="la-w2"><span style="--i:0">C</span><span style="--i:1">o</span><span style="--i:2">n</span><span style="--i:3">v</span><span style="--i:4">e</span><span style="--i:5">r</span><span style="--i:6">g</span><span style="--i:7">e</span><span style="--i:8" class="dot">.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="brand" aria-label="Creative Converge home">
+        <svg class="brand__mark" viewBox="-70 -70 140 140" aria-hidden="true">
+          <defs>
+            <linearGradient id="navGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#5FF0C8"/><stop offset=".5" stop-color="#00D4A3"/><stop offset="1" stop-color="#008A72"/>
+            </linearGradient>
+          </defs>
+          <path d="M38.3 -32.1 A50 50 0 1 0 38.3 32.1" fill="none" stroke="url(#navGrad)" stroke-width="16" stroke-linecap="round"/>
+          <g><path d="M23 -19.3 A30 30 0 1 0 23 19.3" fill="none" stroke="#5FF0C8" stroke-width="5" stroke-linecap="round"/><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="7s" repeatCount="indefinite"/></g>
+          <circle class="pulse" cx="42" cy="0" r="9" fill="#5FF0C8"/>
+        </svg>
+        <span class="brand__text"><span>Creative</span><span class="mint">Converge<i>.</i></span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#white-label" class="nav__link">White-label</a>
+        <a href="#work" class="nav__link">Work</a>
+        <a href="#pricing" class="nav__link">Pricing</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="header__cta">
+        <a href="#contact" class="btn btn--mint btn--sm magnetic"><span>Book a call</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__spot" id="heroSpot"></div>
+      <div class="glow glow--1"></div>
+      <div class="glow glow--2"></div>
+      <div class="grid-lines" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <div class="pill reveal"><span class="pill__dot"></span>White-label design studio · Texas, USA</div>
+          <h1 class="hero__title">
+            <span class="line"><span class="word">We</span> <span class="word">design.</span></span>
+            <span class="line"><span class="word">You</span> <span class="word">take</span></span>
+            <span class="line"><span class="word">the</span> <span class="word shine" id="rotWord">credit.</span></span>
+          </h1>
+          <p class="hero__lead reveal" style="--d:.9s">Premium websites, branding and motion, built quietly under your agency's name. Pixel-perfect, on deadline, and never a word about us to your clients.</p>
+          <div class="hero__actions reveal" style="--d:1.05s">
+            <a href="#contact" class="btn btn--mint magnetic"><span>Start a white-label project</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            <a href="#work" class="btn btn--ghost"><span class="play-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7l8 5-8 5z"/></svg></span><span>See our work</span></a>
+          </div>
+          <div class="hero__trust reveal" style="--d:1.2s">
+            <div class="avatars" aria-hidden="true"><span><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></span><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span></div>
+            <p><strong>NDA-first</strong> partnership · reply within one business day</p>
+          </div>
+        </div>
+
+        <div class="hero__visual" id="heroVisual">
+          <div class="orbit orbit--1" aria-hidden="true"></div>
+          <div class="orbit orbit--2" aria-hidden="true"></div>
+          <picture>
+            <source srcset="assets/img/hero-3d.webp" type="image/webp">
+            <img src="assets/img/hero-3d.png" alt="Glossy mint 3D ring, spheres and capsules on black" class="hero__img" width="1100" height="1100" fetchpriority="high">
+          </picture>
+          <div class="float-card float-card--a">
+            <span class="float-card__label">Projects delivered</span>
+            <span class="float-card__num"><span data-count="354">0</span>+</span>
+          </div>
+          <div class="float-card float-card--b">
+            <span class="badge-live"></span>
+            <span class="float-card__label">Your logo here.<br>Not ours.</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#stats" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee-wrap" aria-label="Services list">
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>Web design</span><i>✦</i><span class="outline">Branding</span><i>✦</i><span>E-commerce</span><i>✦</i><span class="outline">Logo design</span><i>✦</i><span>Video animation</span><i>✦</i><span class="outline">Illustration</span><i>✦</i>
+          <span>Web design</span><i>✦</i><span class="outline">Branding</span><i>✦</i><span>E-commerce</span><i>✦</i><span class="outline">Logo design</span><i>✦</i><span>Video animation</span><i>✦</i><span class="outline">Illustration</span><i>✦</i>
+        </div>
+      </div>
+      <div class="marquee marquee--rev">
+        <div class="marquee__track">
+          <span class="outline">WordPress</span><i>✦</i><span>Shopify</span><i>✦</i><span class="outline">UI/UX</span><i>✦</i><span>Motion graphics</span><i>✦</i><span class="outline">Brand guides</span><i>✦</i><span>Landing pages</span><i>✦</i>
+          <span class="outline">WordPress</span><i>✦</i><span>Shopify</span><i>✦</i><span class="outline">UI/UX</span><i>✦</i><span>Motion graphics</span><i>✦</i><span class="outline">Brand guides</span><i>✦</i><span>Landing pages</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section section--tight" id="stats">
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat"><div class="stat__num"><span data-count="9">0</span><em>+</em></div><div class="stat__label">Years of experience</div></div>
+          <div class="stat"><div class="stat__num"><span data-count="354">0</span></div><div class="stat__label">Projects delivered</div></div>
+          <div class="stat"><div class="stat__num"><span data-count="235">0</span></div><div class="stat__label">Satisfied clients</div></div>
+          <div class="stat"><div class="stat__num"><span data-count="15">0</span></div><div class="stat__label">Awards won</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow reveal">Our services</div>
+            <h2 class="h2 reveal">We do <span class="outline">everything</span><br>your clients ask for.</h2>
+          </div>
+          <p class="section-head__lead reveal">One partner for every deliverable on your agency's roster, each one finished to a premium standard.</p>
+        </div>
+
+        <div class="services">
+          <article class="svc spot-card reveal">
+            <div class="svc__top"><span class="svc__num">01</span>
+              <svg class="svc__ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg></div>
+            <h3>Web design and development</h3>
+            <p>Custom sites, e-commerce and landing pages, built responsive and fast.</p>
+            <ul class="tags"><li>WordPress</li><li>Shopify</li><li>Custom</li></ul>
+          </article>
+          <article class="svc spot-card reveal" style="--d:.08s">
+            <div class="svc__top"><span class="svc__num">02</span>
+              <svg class="svc__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6L20 9.3l-4 4 1 5.7-5-2.8-5 2.8 1-5.7-4-4 5.4-.7z"/></svg></div>
+            <h3>Logo and brand identity</h3>
+            <p>Marks, type systems and brand guides that hold up everywhere.</p>
+            <ul class="tags"><li>Logos</li><li>Guides</li><li>Packaging</li></ul>
+          </article>
+          <article class="svc spot-card reveal" style="--d:.16s">
+            <div class="svc__top"><span class="svc__num">03</span>
+              <svg class="svc__ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/></svg></div>
+            <h3>Video animation</h3>
+            <p>Explainers, motion graphics and product videos that hold attention.</p>
+            <ul class="tags"><li>2D</li><li>Motion</li><li>Explainers</li></ul>
+          </article>
+          <article class="svc spot-card reveal" style="--d:.24s">
+            <div class="svc__top"><span class="svc__num">04</span>
+              <svg class="svc__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg></div>
+            <h3>Illustration design</h3>
+            <p>Custom illustrations and icon sets that make a brand unmistakable.</p>
+            <ul class="tags"><li>Icons</li><li>Characters</li><li>Scenes</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHITE-LABEL ============ -->
+    <section class="section section--alt" id="white-label">
+      <div class="glow glow--3"></div>
+      <div class="container wl">
+        <div class="wl__left">
+          <div class="eyebrow reveal">How white-label works</div>
+          <h2 class="h2 reveal">Your brand<br>out front.<br><span class="mint">Our team</span><br>behind it.</h2>
+          <p class="lead reveal">Scale your agency without hiring. We work under NDA, inside your process, and hand over files ready for you to present as your own.</p>
+          <div class="wl__mark reveal">
+            <picture>
+              <source srcset="assets/img/mark-3d.webp" type="image/webp">
+              <img src="assets/img/mark-3d.png" alt="3D Creative Converge C mark in glossy mint" loading="lazy" width="1000" height="1000">
+            </picture>
+          </div>
+        </div>
+        <div class="wl__steps">
+          <div class="wl__line"><span id="wlProgress"></span></div>
+          <div class="step reveal"><div class="step__num">01</div><div><h3>You send the brief</h3><p>Share your client's goals, brand assets and deadline. We sign your NDA first.</p></div></div>
+          <div class="step reveal"><div class="step__num">02</div><div><h3>We design unbranded</h3><p>Every file, preview link and mockup carries your agency's name, never ours.</p></div></div>
+          <div class="step reveal"><div class="step__num">03</div><div><h3>You review and present</h3><p>Request revisions directly with our team, then present to your client with confidence.</p></div></div>
+          <div class="step reveal"><div class="step__num">04</div><div><h3>We launch for you</h3><p>Complete deployment and handover, ready to bill under your name.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow reveal">Selected work</div>
+            <h2 class="h2 reveal">Our latest <span class="mint">cases.</span></h2>
+          </div>
+          <div class="filters reveal" role="group" aria-label="Filter work">
+            <button class="filter is-active" data-filter="all">All work</button>
+            <button class="filter" data-filter="web">Web</button>
+            <button class="filter" data-filter="logo">Logo</button>
+            <button class="filter" data-filter="branding">Branding</button>
+            <button class="filter" data-filter="video">Video</button>
+          </div>
+        </div>
+
+        <div class="works" id="works">
+          <!-- Replace each .mock with <img src="your-screenshot.jpg" alt="..."> when ready -->
+          <a href="#contact" class="work reveal" data-cat="web">
+            <div class="work__media mock mock--a"><div class="mock__bar"><i></i><i></i><i></i></div><div class="mock__hero"></div><div class="mock__row"><b></b><b></b><b></b></div></div>
+            <div class="work__meta"><div><h3>E-commerce storefront</h3><p>Web design · Shopify</p></div><span class="work__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+          <a href="#contact" class="work reveal" data-cat="branding" style="--d:.08s">
+            <div class="work__media mock mock--b"><div class="mock__logo"></div><div class="mock__swatches"><b></b><b></b><b></b><b></b></div></div>
+            <div class="work__meta"><div><h3>Restaurant identity</h3><p>Branding · Logo system</p></div><span class="work__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+          <a href="#contact" class="work reveal" data-cat="video" style="--d:.16s">
+            <div class="work__media mock mock--c"><div class="mock__play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7l8 5-8 5z"/></svg></div><div class="mock__timeline"><b></b></div></div>
+            <div class="work__meta"><div><h3>SaaS product launch</h3><p>Video · Motion graphics</p></div><span class="work__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+          <a href="#contact" class="work reveal" data-cat="web">
+            <div class="work__media mock mock--d"><div class="mock__bar"><i></i><i></i><i></i></div><div class="mock__split"><b></b><b></b></div><div class="mock__row"><b></b><b></b></div></div>
+            <div class="work__meta"><div><h3>Real estate website</h3><p>Web design · WordPress</p></div><span class="work__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+          <a href="#contact" class="work reveal" data-cat="logo" style="--d:.08s">
+            <div class="work__media mock mock--e"><div class="mock__mark"></div></div>
+            <div class="work__meta"><div><h3>Fitness studio mark</h3><p>Logo design</p></div><span class="work__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+          <a href="#contact" class="work reveal" data-cat="branding" style="--d:.16s">
+            <div class="work__media mock mock--f"><div class="mock__bottle"></div><div class="mock__bottle mock__bottle--sm"></div></div>
+            <div class="work__meta"><div><h3>Skincare brand refresh</h3><p>Branding · Packaging</p></div><span class="work__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+        </div>
+        <div class="center reveal"><a href="#contact" class="btn btn--ghost">View full portfolio</a></div>
+      </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="section why">
+      <div class="container why__inner">
+        <div class="why__visual reveal">
+          <div class="glow glow--4"></div>
+          <picture>
+            <source srcset="assets/img/shapes-3d.webp" type="image/webp">
+            <img src="assets/img/shapes-3d.png" alt="Floating mint 3D capsule, spheres and ring" loading="lazy" width="1000" height="1000" class="float-slow">
+          </picture>
+        </div>
+        <div class="why__copy">
+          <div class="eyebrow reveal">Why agencies choose us</div>
+          <h2 class="h2 reveal">Senior craft.<br><span class="outline">Zero</span> overhead.</h2>
+          <div class="accordion" id="accordion">
+            <div class="acc is-open reveal">
+              <button class="acc__head" aria-expanded="true"><span class="acc__num">01</span><span>Modern technologies</span><span class="acc__icon"></span></button>
+              <div class="acc__body"><p>Figma, Adobe Suite, WordPress, Shopify and custom code, matched to each project and each client's stack.</p></div>
+            </div>
+            <div class="acc reveal">
+              <button class="acc__head" aria-expanded="false"><span class="acc__num">02</span><span>Huge digital experience</span><span class="acc__icon"></span></button>
+              <div class="acc__body"><p>Nine years of design for brands in retail, real estate, healthcare and tech, so your clients get proven patterns, not experiments.</p></div>
+            </div>
+            <div class="acc reveal">
+              <button class="acc__head" aria-expanded="false"><span class="acc__num">03</span><span>Individual approach</span><span class="acc__icon"></span></button>
+              <div class="acc__body"><p>A dedicated lead on every account who learns your style, your process and your clients.</p></div>
+            </div>
+            <div class="acc reveal">
+              <button class="acc__head" aria-expanded="false"><span class="acc__num">04</span><span>Research-led design</span><span class="acc__icon"></span></button>
+              <div class="acc__body"><p>We analyze each market and audience before the first pixel, then build in learnings from every project we ship.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section section--alt" id="pricing">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <div class="eyebrow reveal">Pricing</div>
+          <h2 class="h2 reveal">Simple <span class="mint">packages.</span></h2>
+          <p class="section-head__lead reveal">Clear website packages you can mark up and resell. Expedited delivery is available on every plan.</p>
+        </div>
+        <div class="plans">
+          <article class="plan spot-card reveal">
+            <div class="plan__name">Bronze</div>
+            <div class="plan__price"><sup>$</sup>499</div>
+            <div class="plan__note">Add $50 for expedited delivery</div>
+            <ul class="plan__list"><li>Custom page design</li><li>WordPress build</li><li>Banner design</li><li>Contact or query form</li><li>Revision rounds</li><li>Complete deployment</li></ul>
+            <a href="#contact" class="btn btn--ghost btn--block">Choose Bronze</a>
+          </article>
+          <article class="plan plan--featured reveal" style="--d:.1s">
+            <div class="plan__shine"></div>
+            <div class="plan__name">Startup <span class="plan__badge">Most popular</span></div>
+            <div class="plan__price"><sup>$</sup>799</div>
+            <div class="plan__note">Add $50 for expedited delivery</div>
+            <ul class="plan__list"><li>Everything in Bronze</li><li>More custom pages</li><li>Stock photos included</li><li>Professional banner set</li><li>Extra revision rounds</li><li>Complete deployment</li></ul>
+            <a href="#contact" class="btn btn--dark btn--block magnetic">Choose Startup</a>
+          </article>
+          <article class="plan spot-card reveal" style="--d:.2s">
+            <div class="plan__name">Professional</div>
+            <div class="plan__price"><sup>$</sup>1,199</div>
+            <div class="plan__note">Add $50 for expedited delivery</div>
+            <ul class="plan__list"><li>Everything in Startup</li><li>Larger multi-page site</li><li>Custom banner designs</li><li>Sliding banners</li><li>Unlimited revisions</li><li>Content management system</li></ul>
+            <a href="#contact" class="btn btn--ghost btn--block">Choose Professional</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container faq">
+        <div>
+          <div class="eyebrow reveal">FAQ</div>
+          <h2 class="h2 reveal">Questions<br><span class="outline">agencies</span><br>ask us.</h2>
+        </div>
+        <div class="accordion" id="faqList">
+          <div class="acc reveal"><button class="acc__head" aria-expanded="false"><span>Will my clients ever know you exist?</span><span class="acc__icon"></span></button>
+            <div class="acc__body"><p>No. We work under your NDA, deliver unbranded files and never contact your clients unless you ask us to join a call as part of your team.</p></div></div>
+          <div class="acc reveal"><button class="acc__head" aria-expanded="false"><span>How fast can you deliver?</span><span class="acc__icon"></span></button>
+            <div class="acc__body"><p>Timelines depend on the package and scope. Expedited delivery is available on every plan for an extra $50.</p></div></div>
+          <div class="acc reveal"><button class="acc__head" aria-expanded="false"><span>Can I resell your packages at my own price?</span><span class="acc__icon"></span></button>
+            <div class="acc__body"><p>Yes. Our pricing is built for agencies to mark up and bill under their own brand.</p></div></div>
+          <div class="acc reveal"><button class="acc__head" aria-expanded="false"><span>Which platforms do you build on?</span><span class="acc__icon"></span></button>
+            <div class="acc__body"><p>WordPress, Shopify and fully custom builds. Tell us your client's stack and we'll match it.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BIG CTA ============ -->
+    <section class="cta-band">
+      <div class="cta-band__marquee" aria-hidden="true">
+        <div class="marquee__track"><span>Let's converge</span><i>✦</i><span class="outline">Let's converge</span><i>✦</i><span>Let's converge</span><i>✦</i><span class="outline">Let's converge</span><i>✦</i></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="glow glow--5"></div>
+      <div class="container contact__inner">
+        <div class="contact__copy">
+          <div class="eyebrow reveal">Free consultation</div>
+          <h2 class="h1 reveal">Let's build<br>something<br><span class="mint shine">converge-worthy.</span></h2>
+          <p class="lead reveal">Tell us about your agency or your next client project. We'll reply within one business day with a plan and a quote.</p>
+          <ul class="contact__list reveal">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@yourdomain.com">info@[yourdomain].com</a></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>[YOUR ADDRESS], Texas, USA</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon–Fri, [YOUR HOURS] CT</span></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="field"><input id="fName" name="name" type="text" placeholder=" " required autocomplete="name"><label for="fName">Your name</label><small class="field__err">Enter your name</small></div>
+            <div class="field"><input id="fEmail" name="email" type="email" placeholder=" " required autocomplete="email"><label for="fEmail">Email</label><small class="field__err">Enter a valid email</small></div>
+          </div>
+          <div class="field"><input id="fCompany" name="company" type="text" placeholder=" " autocomplete="organization"><label for="fCompany">Agency or company</label></div>
+          <fieldset class="chips">
+            <legend>What do you need?</legend>
+            <label><input type="checkbox" name="need" value="Website"><span>Website</span></label>
+            <label><input type="checkbox" name="need" value="Branding"><span>Branding</span></label>
+            <label><input type="checkbox" name="need" value="Logo"><span>Logo</span></label>
+            <label><input type="checkbox" name="need" value="Video"><span>Video</span></label>
+            <label><input type="checkbox" name="need" value="Illustration"><span>Illustration</span></label>
+          </fieldset>
+          <div class="field"><textarea id="fMsg" name="message" rows="4" placeholder=" " required></textarea><label for="fMsg">Project details</label><small class="field__err">Tell us a little about the project</small></div>
+          <button type="submit" class="btn btn--mint btn--block magnetic"><span>Send message</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></button>
+          <p class="form__success" id="formSuccess" role="status" hidden>Thanks! Your message is on its way. We'll reply within one business day.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#top" class="brand brand--lg" aria-label="Creative Converge home">
+            <svg class="brand__mark" viewBox="-70 -70 140 140" aria-hidden="true">
+              <defs><linearGradient id="ftGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5FF0C8"/><stop offset=".5" stop-color="#00D4A3"/><stop offset="1" stop-color="#008A72"/></linearGradient></defs>
+              <path d="M38.3 -32.1 A50 50 0 1 0 38.3 32.1" fill="none" stroke="url(#ftGrad)" stroke-width="16" stroke-linecap="round"/>
+              <g><path d="M23 -19.3 A30 30 0 1 0 23 19.3" fill="none" stroke="#5FF0C8" stroke-width="5" stroke-linecap="round"/><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="7s" repeatCount="indefinite"/></g>
+              <circle class="pulse" cx="42" cy="0" r="9" fill="#5FF0C8"/>
+            </svg>
+            <span class="brand__text"><span>Creative</span><span class="mint">Converge<i>.</i></span></span>
+          </a>
+          <p>Premium white-label web design, branding and motion for agencies across the US.</p>
+          <form class="newsletter" id="newsletter" novalidate>
+            <label for="nlEmail" class="sr-only">Email for newsletter</label>
+            <input id="nlEmail" type="email" placeholder="Your email for design updates" required>
+            <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </form>
+        </div>
+        <div class="footer__cols">
+          <div><h4>Services</h4><a href="#services">Web design</a><a href="#services">Logo and branding</a><a href="#services">Video animation</a><a href="#services">Illustration</a></div>
+          <div><h4>Company</h4><a href="#white-label">White-label</a><a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div>
+          <div><h4>Support</h4><a href="#">Terms and conditions</a><a href="#">Privacy policy</a><a href="#">Refund policy</a></div>
+        </div>
+      </div>
+      <div class="footer__word" aria-hidden="true">Creative Converge</div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> Creative Converge. All rights reserved.</span>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg></a>
+          <a href="#" aria-label="Behance"><svg viewBox="0 0 24 24"><path d="M3 7h5a2.5 2.5 0 010 5H3zM3 12h5.5a2.5 2.5 0 010 5H3zM14 14h7a3.5 3.5 0 10-1 2.5M15 8h5"/></svg></a>
+          <a href="#" aria-label="Dribbble"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.5 9.5c6 0 11-1.5 14-5M7 19.5c2-5 6-8 13.5-7M9 3.5c3 4 5 10 5.5 17"/></svg></a>
+        </div>
+        <span>Designed in Texas, USA</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg class="to-top__ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><circle id="toTopProgress" cx="24" cy="24" r="22"/></svg>
+    <svg class="to-top__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
